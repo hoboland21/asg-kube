@@ -1,0 +1,18 @@
+     <!--  --------------------   -->
+     <div class="card" style="height:600px">
+        <div class="card-header">
+            <h4>Log Viewer</h4>    
+        </div>
+        <div class="card-body " style="overflow-y:auto;overflow-x:auto">
+            <div *ngFor='let m of display'>
+               <div  class="flex-con small_dsp">
+               <div style="width:8%">{{m.username }} </div>
+               <div style="width:18%">{{m.time | date :'yyyyMMdd HH:mm' }} </div> 
+               <div style="width:10%">{{ m.action }}</div> 
+               <div style="width:62%">{{ m.name }}</div> 
+          
+            </div>
+        </div>
+    </div>
+    <!--  --------------------   -->
+   
